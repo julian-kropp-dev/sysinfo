@@ -1,3 +1,4 @@
+# coding=utf8
 import psutil
 import platform
 from datetime import datetime
@@ -74,7 +75,7 @@ for gpu in gpus:
     print(f"\tFree Mem: {gpu.memoryFree}MB")
     print(f"\tUsed Mem: {gpu.memoryUsed}MB")
     print(f"\tTotal Mem: {gpu.memoryTotal}MB")
-    print(f"\tTemperature: {gpu.temperature} °C")
+    print(f"\tTemperature: {gpu.temperature} Â°C")
 
 print("-"*40, "Network Information", "-"*40)
 if_addrs = psutil.net_if_addrs()
